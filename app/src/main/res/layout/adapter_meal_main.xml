@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="19.7dp"
+        android:orientation="vertical">
+
+
+        <!--        <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/meal_image"
+                    android:layout_width="207.3dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/img_white" />-->
+
+        <ImageView
+            android:id="@+id/meal_image"
+            android:layout_width="207.3dp"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_white" />
+
+        <TextView
+            android:id="@+id/meal_label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Parata"
+            android:textColor="#373737"
+            android:textSize="16.7sp" />
+
+
+        <!--        <TextView
+                    android:id="@+id/tv_dish_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punjabi"
+                    android:textSize="12.7sp"
+                    android:layout_marginTop="11.7dp"
+                    android:textColor="#a5a5a5"/>-->
+
+        <TextView
+            android:id="@+id/meal_label_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.7dp"
+            android:text="Rs 500 / person (app.)"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12.7sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.3dp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isIndicator="false"
+                android:rating="3" />
+
+            <TextView
+                android:id="@+id/tv_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_horizontal"
+                android:text="235 Review"
+                android:textColor="#a5a5a5"
+                android:textSize="9.7sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

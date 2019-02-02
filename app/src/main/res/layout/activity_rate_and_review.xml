@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bitehunter.bitehunter.Views.RateAndReviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.23">
+
+            <TextView
+                android:id="@+id/txtRate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/imgUser"
+                android:layout_alignEnd="@+id/txtAvarage"
+                android:layout_alignRight="@+id/txtAvarage"
+                android:text="Rate"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignLeft="@+id/rateBar"
+                android:layout_alignStart="@+id/rateBar"
+                android:layout_alignTop="@+id/txtCountOfReviewers"
+                app:srcCompat="@drawable/users" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/txtRate"
+                android:layout_toRightOf="@+id/txtRate"
+                android:text="0.0"
+                android:textSize="50sp" />
+
+            <RatingBar
+                android:id="@+id/rateBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_toEndOf="@+id/txtRating"
+                android:layout_toRightOf="@+id/txtRating"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <TextView
+                android:id="@+id/txtCountOfReviewers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtRating"
+                android:layout_alignBottom="@+id/txtRating"
+                android:layout_toEndOf="@+id/imgUser"
+                android:layout_toRightOf="@+id/imgUser"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txtAvarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="64dp"
+                android:text="Avarage"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="5 Star" />
+
+                <ProgressBar
+                    android:id="@+id/pgrFive"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/txtFiveCout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignLeft="@+id/rateBar"
+                    android:layout_alignStart="@+id/rateBar"
+                    android:layout_alignTop="@+id/txtCountOfReviewers"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/users" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="4 Star" />
+
+                <ProgressBar
+                    android:id="@+id/pgrFour"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/txtFourCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignLeft="@+id/rateBar"
+                    android:layout_alignStart="@+id/rateBar"
+                    android:layout_alignTop="@+id/txtCountOfReviewers"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/users" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="3 Star" />
+
+                <ProgressBar
+                    android:id="@+id/pgrThree"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/txtThreeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignLeft="@+id/rateBar"
+                    android:layout_alignStart="@+id/rateBar"
+                    android:layout_alignTop="@+id/txtCountOfReviewers"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/users" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="2 Star" />
+
+                <ProgressBar
+                    android:id="@+id/pgrTwo"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/txtTwoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignLeft="@+id/rateBar"
+                    android:layout_alignStart="@+id/rateBar"
+                    android:layout_alignTop="@+id/txtCountOfReviewers"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/users" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="1 Star" />
+
+                <ProgressBar
+                    android:id="@+id/pgrOne"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/txtOneCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignStart="@+id/rateBar"
+                    android:layout_alignTop="@+id/txtCountOfReviewers"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/users" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <com.bitehunter.bitehunter.Others.PMSGrid
+            android:id="@+id/reviewGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.bitehunter.bitehunter.Others.PMSGrid>
+    </LinearLayout>
+</ScrollView>

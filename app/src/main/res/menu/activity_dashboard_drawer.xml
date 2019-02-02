@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_make_reservation"
+            android:icon="@drawable/nav_reservation"
+            android:title="Make Reservation" />
+
+        <item
+            android:id="@+id/nav_restaurants"
+            android:icon="@drawable/icon_restaurant"
+            android:title="Restaurants" />
+
+    </group>
+
+    <item android:title="Me">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_manage_account"
+                    android:icon="@drawable/nav_profile"
+                    android:title="Manage Account" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/nav_logout"
+                    android:title="Log out" />
+                >
+            </group>
+        </menu>
+    </item>
+</menu>

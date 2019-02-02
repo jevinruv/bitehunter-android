@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Bitehunter</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="error_empty_field_time">Select Time</string>
+    <string name="error_empty_field_restaurant">Select Restaurant</string>
+    <string name="error_invalid_email">Invalid Email</string>
+    <string name="error_length_name">Name is Too Short</string>
+    <string name="error_length_password">Password is Too Short</string>
+    <string name="error_invalid_contact">Contact Number Invalid</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="already_have_an_account">Already have an Account!</string>
+    <string name="email">Email</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="phone_email_or_username">Phone, email, or Username</string>
+    <string name="nic_number">NIC Number</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_meal_details">MealDetailsActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

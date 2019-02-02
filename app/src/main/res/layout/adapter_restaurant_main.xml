@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14.3dp"
+        android:background="@drawable/restaurant_rectangle"
+        android:orientation="vertical">
+
+
+        <!--        <com.android.volley.toolbox.NetworkImageView
+
+                    android:id="@+id/restaurant_image"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/img_white"
+                    android:scaleType="centerCrop" />-->
+
+
+        <ImageView
+            android:id="@+id/meal_image"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_white" />
+
+        <TextView
+            android:id="@+id/meal_label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.7dp"
+            android:text="Name"
+            android:textColor="#373737"
+            android:textSize="15.3dp" />
+
+        <TextView
+            android:id="@+id/tv_cusine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.7dp"
+            android:text="Thai Cusine"
+            android:textColor="#373737"
+            android:textSize="12.7dp" />
+
+        <TextView
+            android:id="@+id/restaurant_label_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.7dp"
+            android:text="Vadodara"
+            android:textColor="#a5a5a5"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
